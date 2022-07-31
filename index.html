@@ -1,42 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/b8c1e8d075.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-	<title>one page</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/b8c1e8d075.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>one page</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+    <nav class="navbar-expand-md navbar-light bg-light fixed-top" id="navbar-scroll">
+      <div class="container">
+        <a href="#" class="navbar-brand">Avida</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav ms-auto my-3 my-md-0">
+            <li class="nav-item fw-bolder">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="container">
+      <div class="row min-vh-100">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center order-1 order-lg-0"
+        >
+          <h1 class="fw-bold pb-4" data-aos="fade-up" data-aos-duration="1000">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
+            dolores.
+          </h1>
+          <h3 class="fs-4 pb-4" data-aos="fade-up" data-aos-delay="50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+            debitis adipisci repellat repellendus, repudiandae vel distinctio
+            ducimus nisi eius? Sint vitae, reprehenderit quasi error cumque
+            earum voluptas consequatur dolorum eos.
+          </h3 data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <a href="#about" class="btn btn-info btn-lg text-white"
+              >Get Started
+              <i class="fas fa-long-arrow-alt-right ms-3"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-self-center">
+          <img src="images/why-us.png" alt="" class="img-fluid" data-aos="fade-right"/>
+        </div>
+      </div>
+    </section>
 
-  <nav class="navbar-expand-md navbar-light bg-light">
-    <div class="container">
-      <a href="#" class="navbar-brand">Avida</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggle">
-        <ul class="navbar-nav ms-auto my-3 my-md-0">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Services</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#pricing" class="nav-link">Pricing</a>
-          </li> 
-        </ul>
+    <div class="container my-5">
+      <div class="row mb-5">
+        <div class="col-lg3 col-md-6 mb-4">
+          <div
+            class="d-flex justify-content-around shadow-lg align-items-center p-4 rounded" data-aos="fade-up" data-aos-delay ="150" >
+            <i class="far fa-smile fa-3x text-primary"></i>
+
+            <div>
+              <p class="fs-1 fw-bolder mb-0">242</p>
+              <p class="mb-1">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg3 col-md-6 mb-4">
+          <div
+            class="d-flex justify-content-around shadow-lg align-items-center p-4 rounded" data-aos="fade-up" data-aos-delay ="300"
+          >
+            <i class="fas fa-trophy fa-3x text-success"></i>
+
+            <div>
+              <p class="fs-1 fw-bolder mb-0">3</p>
+              <p class="mb-1">Awards Won</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg3 col-md-6 mb-4">
+          <div
+            class="d-flex justify-content-around shadow-lg align-items-center p-4 rounded " data-aos="fade-up" data-aos-delay ="450"
+          >
+            <i class="fas fa-file-invoice fa-3x text-primary"></i>
+
+            <div>
+              <p class="fs-1 fw-bolder mb-0">18</p>
+              <p class="mb-1">Algorithms Deployed</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg3 col-md-6 mb-4">
+          <div
+            class="d-flex justify-content-around shadow-lg align-items-center p-4 rounded"
+            data-aos="fade-up" data-aos-delay ="600"
+          >
+            <i class="fas fa-user-friends fa-3x text-info"></i>
+
+            <div>
+              <p class="fs-1 fw-bolder mb-0">05</p>
+              <p class="mb-1">Team members</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-	
+    <!--stats end-->
+    <!--about section-->
+    <section id="about" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center py-5">
+          <h2 class="fw-bolder border-bottom border-info border-3 d-inline-block pb-1" data-aos="zoom-in">About</h2>
+          <p class="fs-5 mt-3" data-aos="zoom-in-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eaque necessitatibus quisquam eum ipsum!</p>
+        <div class="col-xl-8 mx-auto pb-5">
+          <div class="accordion">
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up">
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseone">
+                  Short History about the company 
+                </button>
+              </h5>
+              <div class="accoridon-collapse collapse" id="collapseone">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione rerum mollitia harum ipsam expedita laudantium quod consequatur. Odio, praesentium.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up">
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button class="accordion-button colla[se" data-bs-toggle="collapse" data-bs-target="#collapsetwo">
+                  What makes us special? 
+                </button>
+              </h5>
+              <div class="accoridon-collapse" id="collapsetwo">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione rerum mollitia harum ipsam expedita laudantium quod consequatur. Odio, praesentium.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-3 shadow-sm mb-3" data-aos="fade-up" data-aos-delay="100">
+              <h5 class="accordion-header rounded-3 overflow-hidden">
+                <button class="accordion-button colla[se" data-bs-toggle="collapse" data-bs-target="#collapsethree">
+                  Why you should chose us? 
+                </button>
+              </h5>
+              <div class="accoridon-collapse" id="collapsethree">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione rerum mollitia harum ipsam expedita laudantium quod consequatur. Odio, praesentium.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--about section end-->
+    
+    <!--Services section start-->
+    <section id="services" class="container py-5">
+      <div class="container">
+        <div class="text-center py-5">
+          <h2 class="fw-bolder border-bottom border-info border-3 d-inline-block pb-1" data-aos="fade-up">Services</h2>
+          <p class="fs-5 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eaque necessitatibus quisquam eum ipsum!</p>
+        </div>
+        
+        <div class="row pb-5">
+         
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="shadow-lg p-5 text-center border-bottom border-4 border-success">
+              <i class="far fa-file-archive fa-3x text-success pb-4 pt-2"></i>
+              <h4 class="fw-bolder fs-3 pb-3">
+                Auto Trader
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempora veniam a iusto ea sapiente, optio iste hic, non, saepe esse voluptatibus? Voluptates, esse?
+              </p>
+              <a href="#" class="text-success fw-bold text-decoration-none">Read More <i class="fas fa-long-arrow-alt-right ms-1"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="shadow-lg p-5 text-center border-bottom border-4 border-success">
+              <i class="far fa-file-archive fa-3x text-info pb-4 pt-2"></i>
+              <h4 class="fw-bolder fs-3 pb-3">
+                Training
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempora veniam a iusto ea sapiente, optio iste hic, non, saepe esse voluptatibus? Voluptates, esse?
+              </p>
+              <a href="#" class="text-info fw-bold text-decoration-none">Read More <i class="fas fa-long-arrow-alt-right ms-1"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="shadow-lg p-5 text-center border-bottom border-4 border-success">
+              <i class="far fa-file-archive fa-3x text-danger pb-4 pt-2"></i>
+              <h4 class="fw-bolder fs-3 pb-3">
+                1:1 Coaching
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempora veniam a iusto ea sapiente, optio iste hic, non, saepe esse voluptatibus? Voluptates, esse?
+              </p>
+              <a href="#" class="text-danger fw-bold text-decoration-none">Read More <i class="fas fa-long-arrow-alt-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
-</body>
+
+        </div>
+    </section>
+    <!--Services end-->
+   
+    <!--Newsletter section start-->
+    <div class="py-5" style="background:url(images/cta.jpg) fixed">
+      <div class="container text-white">
+        <div class="row py-5 d-flex align-items-center justify-content-in-between" >
+          <div class="col-lg-9" data-aos="fade-down" data-aos-delay="200">
+            <h2 class="fw-bold fs-3 pb-3">Subscribe to newsletter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, hic quos? Accusantium obcaecati quas quae.</p>
+            </div>
+            <div class="col-lg-3 text-lg-center" data-aos="fade-up" data-aos-delay="200">
+              <a href="#" class="btn btn-outline-info rounded-pill btn-lg text-white" data-bs-toggle="modal" data-bs-target="#ourModal">Subscribe</a>
+            </div>
+          
+        </div>
+        <!--modal start-->
+        <div class="modal fade text-dark" id="ourModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Subscribe To  Our Newsletter</h5>
+                  <button class="btn-close" data-bs-disssmiss="'modal" aria-label="close"></button>
+
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                  <div class="mb-3">
+                    <label for="name" class="col-form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name">
+                                
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="col-form-lable">Your Emal</label>
+                    <input type="email" class="form-control" id="email">        
+                  </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-secondary" "data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-info text-white">Subscribe</button>
+                </div>
+
+              </div>
+            </div>
+        </div>
+        <!--modal end-->
+      </div>
+    </div>
+    <!--Newsletter section end-->
+    
+    <!--pricing section start-->
+    
+    <section id="pricing" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder border-bottom border-3 d-inline-block border-info-pb-1">Pricing</h2>
+        <p class="fs-3 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam.</p>
+        <div class="row pb-5">
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center p-5 shadow-lg border-top border-bottom border-info border-4">
+              <h4 class="fw-bold py-3">Free Plan</h4>
+              <p class="fs-1 fw-bolder mb-8">00 INR</p>
+              <p class="text-info fw-bolder">per month</p>
+              <div class="list py-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lorem ipsum dolor, </li>
+                  <li class="list-group-item text-decoration-line-through">sit amet consectetur adipisicing elit. </li>
+                  <li class="list-group-item text-decoration-line-through">euro amet consectetur adipisicing dollar.</li>
+                
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="text-center p-5 shadow-lg">
+              <h4 class="fw-bold py-3">Starter Plan</h4>
+              <p class="fs-1 fw-bolder mb-8">499 INR</p>
+              <p class="text-info fw-bolder">per month</p>
+              <div class="list py-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lorem ipsum dolor, </li>
+                  <li class="list-group-item">sit amet consectetur adipisicing elit. </li>
+                  <li class="list-group-item text-decoration-line-through">euro amet consectetur adipisicing dollar.</li>
+                
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center p-5 shadow-lg">
+              <h4 class="fw-bold py-3">VIP Plan</h4>
+              <p class="fs-1 fw-bolder mb-8">699 INR</p>
+              <p class="text-info fw-bolder">per month</p>
+              <div class="list py-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lorem ipsum dolor, </li>
+                  <li class="list-group-item">sit amet consectetur adipisicing elit. </li>
+                  <li class="list-group-item ">euro amet consectetur adipisicing dollar.</li>
+                
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--pricing section end-->
+    <!--footer start-->
+    <footer class="bg-dark text-white pt-3 pb-1">
+      <div class="container d-flex justify-content-between">
+        <p>@All rights reserved</p>
+        <p>Designed by <a href="https://digishack.com" target="_blank" class="text-info text-decoration-none">Prady</a>
+      </div>
+    </footer>
+
+    <!--footer end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/papaparse.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({duration:1000});
+    </script>
+  </body>
 </html>
